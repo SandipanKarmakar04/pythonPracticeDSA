@@ -1,3 +1,5 @@
+#Simple Queue Operation:
+
 class Queue:
     def __init__(self):
         self.items = []
@@ -9,7 +11,7 @@ class Queue:
         self.items.append(data)
     def delete(self):
         if not self.isEmpty():
-            self.items.pop(0)
+            return self.items.pop(0)
         else:
             raise IndexError("Queue is empty")
     def getFront(self):
